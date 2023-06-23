@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+
+div.main {
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+div.box {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+div.box2 {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+div.box3{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    position: relative;
+}
