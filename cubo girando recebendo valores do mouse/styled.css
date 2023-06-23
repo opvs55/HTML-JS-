@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+div.mainContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+section.container {
+    height: 100vh;
+    width: 50%;
+}
+
+section.container.one {
+    background-color: red;
+}
+
+section.container.two {
+    background-color: black;
+
+    box-shadow: inset 0px 0px 100px white;
+}
+
+
+section.containerOff.three {
+    position: absolute;
+    background-color: yellow;
+    height: 40vh;
+    width: 40vw;
+
+    left: 30%;
+    bottom: 20%;
+
+    box-shadow: 0px 0px 30px black;
+}
+
+
+
+div.container.one{
+    width: 100%;
+    height: 50px;
+}
+
+
+
+section.cubeOff{
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    perspective: 1000px;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 2s;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 4px solid grey;
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: translateZ(-100px) rotateY(180deg);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
